@@ -1,3 +1,5 @@
+Link: https://leetcode.com/problems/sort-array-by-parity/description/?envType=daily-question&envId=2023-09-28
+
 vector<int> sortArrayByParity(vector<int>& nums) {
 
         // int n=size(nums);                            tc = O(n^2); sc = O(1)
