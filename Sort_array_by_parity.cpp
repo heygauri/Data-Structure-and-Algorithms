@@ -1,8 +1,8 @@
-Link: https://leetcode.com/problems/sort-array-by-parity/description/?envType=daily-question&envId=2023-09-28
+/* https://leetcode.com/problems/sort-array-by-parity/description/?envType=daily-question&envId=2023-09-28 */
 
 vector<int> sortArrayByParity(vector<int>& nums) {
 
-        // int n=size(nums);                            tc = O(n^2); sc = O(1)
+        // int n=size(nums);                                       //tc = O(n^2); sc = O(1)
         // for(int i=0; i<n; i++) {
         //     if(nums[i]%2 != 0) {
         //         nums.push_back(nums[i]);
@@ -12,7 +12,7 @@ vector<int> sortArrayByParity(vector<int>& nums) {
         // }
         // return nums;
 
-        // vector<int> ans;                                //tc = O(n); sc = O(n)
+        // vector<int> ans;                                        //tc = O(n); sc = O(n)
         // for(int &i:nums) {
         //     if(i%2 == 0) ans.push_back(i);
         // }
@@ -21,7 +21,7 @@ vector<int> sortArrayByParity(vector<int>& nums) {
         // }   
         // return ans;
 
-        or(int i=0, j=0; i<size(nums) && j<size(nums); i++) {      tc = O(n); sc =O(1)
+        for(int i=0, j=0; i<size(nums) && j<size(nums); i++) {     //tc = O(n); sc = O(1)
             if(nums[i]%2 == 0) {
                 swap(nums[i], nums[j]);
                 j++;
