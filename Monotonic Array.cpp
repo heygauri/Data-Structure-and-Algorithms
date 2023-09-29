@@ -2,12 +2,11 @@
 
 bool isMonotonic(vector<int>& nums) {
         bool x{true}, y{true};                  //tc = O(n); sc = O(1)
-        //Asc order
         for(int i=1; i<size(nums); i++) {
             if(nums[i-1] > nums[i]) {
-                x = false;
+                x = false;        //Asc order
             }else if(nums[i] > nums[i-1]) {
-                y = false;
+                y = false;        //Desc order
             }
         }
 
