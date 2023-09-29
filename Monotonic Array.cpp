@@ -1,4 +1,4 @@
-Link: https://leetcode.com/problems/monotonic-array/description/?envType=daily-question&envId=2023-09-29
+/* https://leetcode.com/problems/monotonic-array/description/?envType=daily-question&envId=2023-09-29 */
 
 bool isMonotonic(vector<int>& nums) {
         bool x{true}, y{true};                  //tc = O(n); sc = O(1)
