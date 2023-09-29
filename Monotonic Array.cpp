@@ -6,14 +6,8 @@ bool isMonotonic(vector<int>& nums) {
         for(int i=1; i<size(nums); i++) {
             if(nums[i-1] > nums[i]) {
                 x = false;
-                break;
-            }
-        }
-        //Desc order
-        for(int i=1; i<size(nums); i++) {
-            if(nums[i-1] < nums[i]) {
+            }else if(nums[i] > nums[i-1]) {
                 y = false;
-                break;
             }
         }
 
